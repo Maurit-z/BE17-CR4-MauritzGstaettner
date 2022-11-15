@@ -59,17 +59,17 @@ if ($_GET['ISBN']) {
 
             <tr>
                     <th>Image</th>
-                    <td><input class="form-control" type="number" name="image_url" placeholder="Image URL"
+                    <td><input class="form-control" type="text" name="image_url" placeholder="Image URL"
                             value="<?= $image_url ?>" /></td>
                 </tr>
                 <tr>
                     <th>Title</th>
-                    <td><input class="form-control" type="number" name="title" step="any" placeholder="Title"
+                    <td><input class="form-control" type="text" name="title" step="any" placeholder="Title"
                             value="<?= $title ?>" /></td>
                 </tr>
                 <tr>
                     <th>Description</th>
-                    <td><input class="form-control" type="number" name="description" placeholder="Description"
+                    <td><input class="form-control" type="text" name="description" placeholder="Description"
                             value="<?= $short_description ?>" /></td>
                 </tr>
 
@@ -80,37 +80,37 @@ if ($_GET['ISBN']) {
                 </tr>
                 <tr>
                     <th>Type</th>
-                    <td><input class="form-control" type="number" name="type" step="any" placeholder="Type"
+                    <td><input class="form-control" type="text" name="type" step="any" placeholder="Type"
                             value="<?= $type ?>" /></td>
                 </tr>
                 <tr>
                     <th>Author first name</th>
-                    <td><input class="form-control" type="number" name="author_first_name" step="any" placeholder="Author first name"
+                    <td><input class="form-control" type="text" name="author_first_name" step="any" placeholder="Author first name"
                             value="<?= $author_first_name ?>" /></td>
                 </tr>
                 <tr>
                     <th>Author last name</th>
-                    <td><input class="form-control" type="number" name="author_last_name" step="any" placeholder="Author last name"
+                    <td><input class="form-control" type="text" name="author_last_name" step="any" placeholder="Author last name"
                             value="<?= $author_last_name ?>" /></td>
                 </tr>
                 <tr>
                     <th>Publisher</th>
-                    <td><input class="form-control" type="number" name="publisher" step="any" placeholder="Publisher"
+                    <td><input class="form-control" type="text" name="publisher" step="any" placeholder="Publisher"
                             value="<?= $publisher_name ?>" /></td>
                 </tr>
                 <tr>
                     <th>Publisher adr.</th>
-                    <td><input class="form-control" type="number" name="publisher_address" step="any" placeholder="Publisher adr."
+                    <td><input class="form-control" type="text" name="publisher_address" step="any" placeholder="Publisher adr."
                             value="<?= $publisher_address ?>" /></td>
                 </tr>
                 <tr>
                     <th>Publish date</th>
-                    <td><input class="form-control" type="number" name="publish_date" step="any" placeholder="Publish date"
+                    <td><input class="form-control" type="date" name="publish_date" step="any" placeholder="Publish date"
                             value="<?= $publish_date ?>" /></td>
                 </tr>
                 <tr>
                     <th>Availability</th>
-                    <td><input class="form-control" type="number" name="availability" step="any" placeholder="Availability"
+                    <td><input class="form-control" type="text" name="availability" step="any" placeholder="Availability"
                             value="<?= $availability ?>" /></td>
                 </tr>
 

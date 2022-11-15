@@ -4,15 +4,13 @@ require_once "./actions/db_connect.php";
 $sql = "SELECT * from media";
 $result = mysqli_query($conn, $sql);
 $tbody = "";
-// var_dump_pretty($result);
-// $row = mysqli_fetch_assoc($result);
-// var_dump_pretty($row);#
+
 if (mysqli_num_rows($result) > 0) {
     while ($row =  mysqli_fetch_assoc($result)) {
         $tbody .= "
 <tr>
-      
-<td><img class='img-thumbnail' src='" . $row['image_url'] . "'</td>
+            <td>" . $row['id'] . "</td>
+           <td><img class='img-thumbnail' src='" . $row['image_url'] . "'</td>
            <td>" . $row['title'] . "</td>
            <td>" . $row['short_description'] . "</td>
            <td>" . $row['ISBN'] . "</td>
@@ -78,6 +76,7 @@ if (mysqli_num_rows($result) > 0) {
         <table class='table table-striped'>
             <thead class='table-success'>
                 <tr>
+                    <th>ID</th>
                     <th>Picture</th>
                     <th>Title</th>
                     <th>Description</th>

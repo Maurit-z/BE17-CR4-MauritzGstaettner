@@ -40,7 +40,7 @@ if ($_POST) {
     <td>$availability</td>
 
     </tr></table><hr>";
-        $uploadError = ($image_url->error != 0) ? $image_url->ErrorMessage : '';
+        // $uploadError = ($image_url->error != 0) ? $image_url->ErrorMessage : '';
     } else {
         $class = "danger";
         $message = "Error while creating record. Try again: <br>" . $conn->error;
